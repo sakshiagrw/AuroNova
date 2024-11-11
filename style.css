@@ -1,0 +1,598 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+.hero-section {
+    min-height: 100vh;
+    background: linear-gradient(rgba(95, 93, 93, 0.7), rgba(81, 78, 78, 0.7)),
+                url('../images/hero-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    position: relative;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background: rgba(0, 0, 0, 0.3);
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+}
+
+.nav-links li {
+    margin: 0 20px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+}
+
+.hero-content {
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.hero-content h1 {
+    font-size: 48px;
+    margin-bottom: 30px;
+}
+
+.learn-more {
+    padding: 12px 30px;
+    background: #f38144;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
+
+.learn-more:hover {
+    background: #5d1ee6;
+    transform: translateY(-2px);
+}
+
+.car-search-box {
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: white;
+    padding: 10px;
+    border-radius: 10px;
+    width: 90%;
+    max-width: 800px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.search-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Aligns children (input fields and button) horizontally centered */
+    align-items: center; /* Aligns children (input fields and button) vertically centered */
+    gap: 20px;
+}
+
+.search-field {
+    flex: 1;
+    margin: 10px;
+    min-width: 200px;
+}
+
+.search-field label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    font-size: 17px;
+    color: #333;
+}
+
+.search-field input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    outline: none;
+    font-size: 14px;
+    transition: all 0.3s ease;
+    box-sizing: border-box;
+}
+
+.search-field input:focus {
+    border-color: #f38144;
+    box-shadow: 0 0 5px rgba(75, 13, 186, 0.5);
+}
+
+.search-btn {
+    padding: 10px 20px;
+    background: #f38144;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: 10px; /* Adds spacing between the input and button */
+}
+
+.search-btn:hover {
+    background: #f38144;
+    transform: translateY(-2px);
+}
+
+/* Ensures the search button and fields remain centered on smaller screens */
+@media (max-width: 600px) {
+    .search-container {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+
+
+.features-section {
+    padding: 80px 50px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    background-image: linear-gradient(-20deg, #fc6076 0%, #ff9a44 100%);
+    color: white;
+}
+
+.feature-card {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+    backdrop-filter: blur(5px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.feature-card:hover {
+    transform: translateY(-5px);
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.feature-card h3 {
+    color: white;
+    margin: 15px 0;
+    font-size: 20px;
+    font-style: ;
+}
+
+.feature-card p {
+    color: rgba(255, 255, 255, 0.9);
+    line-height: 1.6;
+}
+
+.feature-icon {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.key-features {
+    padding: 80px 50px;
+    text-align: center;
+    background-image: linear-gradient(-20deg, #ff9a44 0%, #fc6076 100%);
+    color: white;
+}
+
+.key-features h2 {
+    color: white;
+    margin-bottom: 40px;
+    font-size: 36px;
+    font-weight: 600;
+}
+
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.feature-item {
+    padding: 30px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    transition: all 0.3s ease;
+    backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.feature-item:hover {
+    background: rgba(255, 255, 255, 0.2);
+    transform: translateY(-5px);
+}
+
+.feature-item h3 {
+    color: white;
+    margin-bottom: 15px;
+    font-size: 22px;
+}
+
+.feature-item p {
+    color: rgba(255, 255, 255, 0.9);
+    line-height: 1.6;
+}
+
+footer {
+    background: #1a1a1a;
+    color: white;
+    padding: 50px 20px 20px;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.footer-logo {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.contact-info {
+    margin: 20px 0;
+}
+
+.contact-info p {
+    margin: 5px 0;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 30px;
+    padding-top: 20px;
+    border-top: 1px solid rgba(255,255,255,0.1);
+    color: rgba(255, 255, 255, 0.6);
+}
+
+@media (max-width: 768px) {
+    nav {
+        padding: 20px;
+        flex-direction: column;
+        gap: 15px;
+    }
+    
+    .nav-links {
+        display: none;
+    }
+    
+    .hero-content h1 {
+        font-size: 32px;
+    }
+    
+    .search-container {
+        flex-direction: column;
+    }
+    
+    .features-section {
+        padding: 40px 20px;
+    }
+
+    .key-features {
+        padding: 40px 20px;
+    }
+
+    .feature-item h3 {
+        font-size: 20px;
+    }
+
+    .footer-content {
+        padding: 0 20px;
+    }
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.feature-card, .feature-item {
+    animation: fadeIn 0.6s ease-out forwards;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+/* About Page Styles */
+.about-section {
+    padding: 80px 50px;
+    background: linear-gradient(-20deg, #fc6076 0%, #ff9a44 100%);
+    color: white;
+}
+
+.mission-content {
+    max-width: 800px;
+    margin: 0 auto 60px;
+    text-align: center;
+}
+
+.mission-content h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: white;
+}
+
+.mission-content p {
+    font-size: 18px;
+    line-height: 1.6;
+    color: rgba(255, 255, 255, 0.9);
+}
+
+/* Target only the About Us page using the class added to the body */
+.about-page .hero-content {
+    position: relative;
+    text-align: center;
+    padding: 100px 20px;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)), url('your-background-image.jpg'); /* Add your background image here */
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    max-width: 100%;
+    overflow: hidden;
+}
+
+.about-page .hero-content h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.about-page .hero-content h3 {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+    font-weight: 500;
+    font-style: italic;
+}
+
+.about-page .hero-content p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin: 20px auto;
+    max-width: 800px;
+    color: #f5f5f5;
+    text-align: left;
+}
+
+.about-page .hero-content strong {
+    font-weight: 700;
+    color: #f38144;
+}
+
+.about-page .hero-content br {
+    margin-bottom: 10px;
+}
+
+/* Adding some styling for mobile responsiveness */
+@media (max-width: 768px) {
+    .about-page .hero-content h1 {
+        font-size: 2.5rem;
+    }
+
+    .about-page .hero-content h3 {
+        font-size: 1.2rem;
+    }
+
+    .about-page .hero-content p {
+        font-size: 1rem;
+        margin: 15px auto;
+    }
+}
+
+/* Optional: Adding a subtle hover effect if you want to use hover for hero section */
+.about-page .hero-content:hover {
+    opacity: 0.9;
+    transition: opacity 0.3s ease-in-out;
+}
+
+
+/* .team-section {
+    padding: 80px 50px;
+    background: #fff;
+}
+
+.team-section h2 {
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 50px;
+    color: #333;
+}
+
+.team-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.team-member {
+    text-align: center;
+    padding: 30px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.team-member:hover {
+    transform: translateY(-5px);
+}
+
+.team-member .feature-icon {
+    font-size: 48px;
+    margin-bottom: 20px;
+    color: #4B0DBA;
+}
+
+.team-member h3 {
+    color: #333;
+    margin-bottom: 10px;
+    font-size: 24px;
+}
+
+.team-member p {
+    color: #666;
+    line-height: 1.6;
+} */
+
+/* Contact Page Styles */
+.contact-section {
+    padding: 80px 50px;
+    background: linear-gradient(-20deg, #fc6076 0%, #ff9a44 100%);
+    min-height: calc(100vh - 200px);
+}
+
+.contact-container {
+    max-width: 600px;
+    margin: 0 auto;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 40px;
+    border-radius: 10px;
+    backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.form-group {
+    margin-bottom: 25px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    color: white;
+    font-size: 16px;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 5px;
+    background: rgba(255, 255, 255, 0.1);
+    color: white;
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: #4B0DBA;
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.form-group textarea {
+    height: 150px;
+    resize: vertical;
+}
+
+.submit-btn {
+    width: 100%;
+    padding: 14px;
+    background: #4B0DBA;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.submit-btn:hover {
+    background: #5d1ee6;
+    transform: translateY(-2px);
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .about-section,
+    .team-section,
+    .contact-section {
+        padding: 40px 20px;
+    }
+
+    .mission-content {
+        padding: 0 20px;
+    }
+
+    .team-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .contact-container {
+        padding: 20px;
+        margin: 0 20px;
+    }
+
+    .form-group input,
+    .form-group textarea {
+        font-size: 14px;
+    }
+}
+
+/* Animations for About and Contact pages */
+.mission-content,
+.team-member,
+.contact-container {
+    animation: fadeIn 0.6s ease-out forwards;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
