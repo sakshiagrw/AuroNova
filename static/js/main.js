@@ -59,7 +59,7 @@ document.addEventListener('DOMContentLoaded', function () {
         const year = document.getElementById('year').value.trim();
 
         if (brand && model && year) {
-            alert(`Searching for ${year} ${brand} ${model}`);
+            //alert(`Searching for ${year} ${brand} ${model}`);
             // Add your search functionality here
         } else {
             alert('Please fill out all fields before searching.');
