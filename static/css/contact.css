@@ -7,7 +7,7 @@
 /* General Navigation Styles */
 .contact-page .nav {
     display: flex;
-    justify-content: space-between; /* Spaces items between the left, center, and right */
+    justify-content: space-between; 
     align-items: center;
     padding: 20px 50px;
     background: rgba(0, 0, 0, 0.3);
@@ -15,7 +15,7 @@
 }
 
 .contact-page .logo img {
-    height: 30px; /* Adjust as needed to fit the header */
+    height: 30px;
     width: 150px;
     margin-right: 10px;
 }
