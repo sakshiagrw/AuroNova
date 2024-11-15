@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -34,53 +36,64 @@ body {
     z-index: -1;
 }
 
-nav {
-    background: rgba(255, 255, 255, 0.95);
-    padding: 1.5rem 2rem;
+header {
+    background: linear-gradient(to right, #f5f5f5, #e6e6e6); 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     position: fixed;
     width: 100%;
     top: 0;
     z-index: 1000;
-    animation: slideDown 0.5s ease;
-    backdrop-filter: blur(10px);
-    border-bottom: 1px solid rgba(255, 99, 71, 0.1);
-    box-shadow: 0 2px 10px rgba(255, 99, 71, 0.05);
+    padding: 10px 50px; 
 }
 
+nav {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+}
+
+/* Logo styling */
 .logo {
-    font-size: 2rem;
-    font-weight: 700;
-    color: #ff6347;
-    float: left;
-    letter-spacing: 3px;
-    transition: all 0.3s ease;
-    text-transform: uppercase;
+    display: flex;
+    align-items: center; 
 }
 
-.logo:hover {
-    text-shadow: 0 0 20px rgba(255, 99, 71, 0.3);
+/* Logo image styling */
+.logo img {
+    height: 30px;
+    width: 150px;
+    margin-right: 10px; 
 }
 
+.text {
+    font-size: 34px;
+    font-weight: bold;
+    color: #f38144;
+    font-family: 'Times New Roman', Times, serif;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%); /* Center text horizontally */
+}
+
+/* Navigation links styling */
 .nav-links {
-    float: right;
+    display: flex;
     list-style: none;
+    margin: 0;
 }
 
 .nav-links li {
-    display: inline-block;
-    margin-left: 2.5rem;
+    margin: 0 20px;
 }
 
 .nav-links a {
+    color: black;
     text-decoration: none;
-    color: #ff8066;
-    font-weight: 500;
-    position: relative;
-    transition: all 0.3s ease;
+    font-family: 'Audiowide', sans-serif;
 }
 
 .nav-links a:hover {
-    color: #ff6347;
+    color: #f38144;
 }
 
 .nav-links a::after {
@@ -90,7 +103,7 @@ nav {
     height: 2px;
     bottom: -5px;
     left: 0;
-    background: linear-gradient(90deg, #ff6347, transparent);
+    background: linear-gradient(90deg, #f38144, transparent);
     transition: width 0.3s ease;
 }
 
@@ -106,7 +119,7 @@ nav {
     background: rgba(255, 99, 71, 0.1);
     backdrop-filter: blur(10px);
     border: 1px solid rgba(255, 99, 71, 0.2);
-    color: #ff6347;
+    color: #f38144;
 }
 
 .details-container {
@@ -141,7 +154,7 @@ nav {
 }
 
 .details-container h2 {
-    color: #ff6347;
+    color: #f38144;
     margin-bottom: 2rem;
     font-size: 2.2rem;
     text-align: center;
@@ -166,7 +179,7 @@ nav {
 }
 
 .details-container strong {
-    color: #ff6347;
+    color: #f38144;
     margin-right: 0.8rem;
     opacity: 0.9;
 }
