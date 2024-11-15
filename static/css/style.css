@@ -5,8 +5,6 @@
     font-family: 'Audiowide', sans-serif;
 }
 
-/* Loading screen styles */
-
 .hero-section {
     position: relative;
     min-height: 100vh;
@@ -64,10 +62,9 @@ nav {
     font-family: 'Times New Roman', Times, serif;
     position: absolute;
     left: 50%;
-    transform: translateX(-50%); /* Center text horizontally */
+    transform: translateX(-50%);
 }
 
-/* Navigation links styling */
 .nav-links {
     display: flex;
     list-style: none;
