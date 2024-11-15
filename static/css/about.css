@@ -1,0 +1,157 @@
+/* Import Common Styles */
+@import 'style.css';
+
+/* Import Google Font for Navbar */
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&display=swap');
+
+/* General Navigation Styles */
+.about-page .nav {
+    display: flex;
+    justify-content: space-between; /* Spaces items between the left, center, and right */
+    align-items: center;
+    padding: 20px 50px;
+    background: rgba(0, 0, 0, 0.3);
+    position: relative;
+}
+
+.about-page .logo img {
+    height: 30px; /* Adjust as needed to fit the header */
+    width: 150px;
+    margin-right: 10px;
+}
+
+.about-page .logo {
+    display: flex;
+    align-items: center;
+    font-size: 24px;
+    font-weight: bold;
+    color: #f38144;
+    font-family: 'Audiowide', sans-serif; /* Apply Audiowide font to logo */
+}
+
+.about-page .nav-links {
+    display: flex;
+    list-style: none;
+    margin: 0;
+}
+
+.about-page .nav-links li {
+    margin: 0 20px;
+}
+
+.about-page .nav-links a {
+    color: black;
+    text-decoration: none;
+    font-family: 'Audiowide', sans-serif; /* Apply Audiowide font to navigation links */
+}
+
+/* About Page Styles */
+.about-page .hero-section {
+    min-height: 100vh;
+    background: linear-gradient(rgba(95, 93, 93, 0.7), rgba(81, 78, 78, 0.7)), url('../images/hero-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    position: relative;
+}
+
+.about-section {
+    padding: 80px 50px;
+    background: linear-gradient(-20deg, #fc6076 0%, #ff9a44 100%);
+    color: white;
+}
+
+.mission-content {
+    max-width: 800px;
+    margin: 0 auto 60px;
+    text-align: center;
+}
+
+.mission-content h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: white;
+}
+
+.mission-content p {
+    font-size: 18px;
+    line-height: 1.6;
+    color: rgba(255, 255, 255, 0.9);
+}
+
+/* Hero Section Styling */
+.about-page .hero-content {
+    position: relative;
+    text-align: center;
+    padding: 100px 20px;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)), url('your-background-image.jpg'); /* Add your background image */
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    max-width: 100%;
+    overflow: hidden;
+}
+
+.about-page .hero-content h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.about-page .hero-content h3 {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+    font-weight: 500;
+    font-style: italic;
+}
+
+.about-page .hero-content p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    margin: 20px auto;
+    max-width: 800px;
+    color: #f5f5f5;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: justify; /* Changed from 'left' to 'justify' for better readability */
+}
+
+.about-page .hero-content strong {
+    font-weight: 700;
+    color: #f38144;
+}
+
+.about-page .hero-content br {
+    margin-bottom: 10px;
+}
+
+/* Mission Section Updates */
+.about-page .mission-section {
+    padding: 60px 20px;
+    text-align: center;
+    background: #5d1ee6; /* Adjusted for a different visual contrast */
+    color: white;
+}
+
+.about-page .mission-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+    font-family: 'Times New Roman', Times, serif;
+    text-transform: capitalize;
+}
+
+.about-page .mission-section p {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    max-width: 700px;
+    margin: 0 auto;
+    color: rgba(255, 255, 255, 0.9);
+}
+
+/* Subtle Animation on Hero Section */
+.about-page .hero-content:hover {
+    opacity: 0.95;
+    transition: opacity 0.3s ease-in-out, transform 0.2s ease-in-out;
+    transform: scale(1.01);
+}
