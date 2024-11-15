@@ -62,7 +62,7 @@ nav {
     font-family: 'Times New Roman', Times, serif;
     position: absolute;
     left: 50%;
-    transform: translateX(-50%);
+    transform: translateX(-50%); /* Center text horizontally */
 }
 
 .nav-links {
